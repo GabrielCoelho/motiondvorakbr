@@ -2,16 +2,11 @@
 // "Teclado Simplificado Brasileiro" ou "Dvorak Brasileiro"
 //
 // Driver para o X Window System, doado ao domínio público.
+// Adaptado do BRDK criado por Nando Florestan (@nandoflorestan)
 //
-// Autores          Contato e Sugestões           Website
-// ================================================================
-// Nando Florestan  nando@acapela.com.br          oui.com.br/
-// Heitor Moraes    heitor.moraes@gmail.com
-// Luiz Portella    lfpor@lujz.org                www.lujz.org/lfpor/dvorak.html
-// Gabriel Soares   gbcoe@outlook.com.br          https://orepertorioliturgico.com.br/
 
 partial default alphanumeric_keys
-xkb_symbols "dvorak-motion" {
+xkb_symbols "custom" {
 
     name[Group1]="Brazilian Dvorak - Motion Inclused(PT-BR)";
 
