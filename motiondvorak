@@ -55,9 +55,9 @@ xkb_symbols "motiondvorak" {
     key <AC01>   { [          a,               A,         ae,          AE  ] };
     key <AC02>   { [          o,               O,         oe,          OE  ] };
     key <AC03>   { [          e,               E,   EuroSign,    EuroSign  ] };
-    key <AC04>   { [          u,               U,  leftarrow               ] };
-    key <AC05>   { [          i,               I,  downarrow,    idotless  ] };
-    key <AC06>   { [          d,               D, rightarrow               ] };
+    key <AC04>   { [          u,               U               ] };
+    key <AC05>   { [          i,               I,    idotless  ] };
+    key <AC06>   { [          d,               D               ] };
     key <AC07>   { [          h,               H,       Left               ] };
     key <AC08>   { [          t,               T,       Down               ] };
     key <AC09>   { [          n,               N,      Right               ] };
