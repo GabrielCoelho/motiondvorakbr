@@ -37,27 +37,26 @@ xkb_symbols "motiondvorak" {
     key <AE12>   { [ bracketright,     braceright,     masculine                ] };
 
     // Linha de cima (Top Row)
-    key <AD01>   { [      slash,   question,        degree,   questiondown ] };
-    key <AD02>   { [      comma,       less, guillemotleft,    leftdoublequotemark  ] };
-//  key <AD03>   { [     period,    greater, periodcentered ] };
-    key <AD03>   { [     period,    greater,        guillemotright,  rightdoublequotemark  ] };
-    key <AD04>   { [          p,          P,         thorn,          THORN ] };
-    key <AD05>   { [          y,          Y,            yen ] };
-    key <AD06>   { [          f,          F,       dstroke,    ordfeminine ] };
-    key <AD07>   { [          g,          G,           eng,            ENG ] };
-    key <AD08>   { [          c,          C,            Up                 ] };
-    key <AD09>   { [          r,          R,    registered,      copyright ] };
-    key <AD10>   { [          l,          L,       lstroke,        Lstroke ] };
-    key <AD11>   { [ dead_acute, dead_grave,         acute,          grave ] };
-    key <AD12>   { [      equal,       plus,       section,    dead_ogonek ] };
+    key <AD01>   { [      slash,   question,         degree,   questiondown         ] };
+    key <AD02>   { [      comma,       less,  guillemotleft, leftdoublequotemark    ] };
+    key <AD03>   { [     period,    greater, guillemotright,  rightdoublequotemark  ] };
+    key <AD04>   { [          p,          P,          thorn,          THORN         ] };
+    key <AD05>   { [          y,          Y,            yen                         ] };
+    key <AD06>   { [          f,          F,        dstroke,    ordfeminine         ] };
+    key <AD07>   { [          g,          G,            eng,            ENG         ] };
+    key <AD08>   { [          c,          C,             Up                         ] };
+    key <AD09>   { [          r,          R,     registered,      copyright         ] };
+    key <AD10>   { [          l,          L,        lstroke,        Lstroke         ] };
+    key <AD11>   { [ dead_acute, dead_grave,          acute,          grave         ] };
+    key <AD12>   { [      equal,       plus,        section,    dead_ogonek         ] };
 
     // Linha do meio (Home Row)
     key <AC01>   { [          a,               A,         ae,          AE  ] };
     key <AC02>   { [          o,               O,         oe,          OE  ] };
-    key <AC03>   { [          e,               E,   EuroSign,    EuroSign  ] };
-    key <AC04>   { [          u,               U               ] };
-    key <AC05>   { [          i,               I,    idotless  ] };
-    key <AC06>   { [          d,               D               ] };
+    key <AC03>   { [          e,               E,   Delete,    EuroSign    ] };
+    key <AC04>   { [          u,               U                           ] };
+    key <AC05>   { [          i,               I,    idotless              ] };
+    key <AC06>   { [          d,               D                           ] };
     key <AC07>   { [          h,               H,       Left               ] };
     key <AC08>   { [          t,               T,       Down               ] };
     key <AC09>   { [          n,               N,      Right               ] };
