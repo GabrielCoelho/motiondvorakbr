@@ -42,7 +42,7 @@ xkb_symbols "motiondvorak" {
 //  key <AD03>   { [     period,    greater, periodcentered ] };
     key <AD03>   { [     period,    greater,        guillemotright,  rightdoublequotemark  ] };
     key <AD04>   { [          p,          P,         thorn,          THORN ] };
-    key <AD05>   { [          y,          Y,       uparrow,            yen ] };
+    key <AD05>   { [          y,          Y,            yen ] };
     key <AD06>   { [          f,          F,       dstroke,    ordfeminine ] };
     key <AD07>   { [          g,          G,           eng,            ENG ] };
     key <AD08>   { [          c,          C,            Up                 ] };
