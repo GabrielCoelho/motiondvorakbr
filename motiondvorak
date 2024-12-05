@@ -1,0 +1,84 @@
+// Brazilian Motion-Dvorak keyboard                     2008-05-04 and 2023-07-31
+// "Teclado Dvorak com Movimentos PT-BR" ou "Motion-Dvorak Brasileiro"
+//
+// Driver para o X Window System, doado ao domínio público.
+// Adaptado do BRDK criado por Nando Florestan (@nandoflorestan)
+//
+
+// '1234567890[] "!@#$%"&*(){} '¹²³£¢¬⅞™±Øªº "¡½¾¼⅜¨&*⅓Ø¯+ 
+// /,.pyfgcrl'=  ?<>PYFGCRL`+ °¸•þ↑đŋ®ł´§  ¿ˇ˙Þ¥ªŊI©Ł 
+// aoeuidhtns~-  AOEUIDHTNS^_ æœ€←↓→ß~—    ÆŒ€FıHJKL§^|
+// ç;qjkxbmwvz\  Ç:QJKXBMWVZ| '̣/|\“”µw«»/  ˝˙ΩCĸBNMW>˘
+
+
+
+partial default alphanumeric_keys modifier_keys function_keys alternate_group
+xkb_symbols "motiondvorak" {
+    name[Group1]="Brazilian Dvorak - Motion Inclused(PT-BR)";
+
+    include "level3(lalt_switch)"
+    include "level5(ralt_switch)"
+
+    key <ESC>    { [   Caps_Lock ]  };
+    key <CAPS>   { [   Escape    ]  };
+
+    key <TLDE>   { [   apostrophe,       quotedbl                               ] };
+    key <AE01>   { [            1,         exclam,   onesuperior,    exclamdown ] };
+    key <AE02>   { [            2,             at,   twosuperior,       onehalf ] };
+    key <AE03>   { [            3,     numbersign, threesuperior, threequarters ] };
+    key <AE04>   { [            4,         dollar,      sterling,    onequarter ] };
+    key <AE05>   { [            5,        percent,          cent,  threeeighths ] };
+    key <AE06>   { [            6, dead_diaeresis,       notsign,     diaeresis ] };
+    key <AE07>   { [            7,      ampersand,  seveneighths                ] };
+    key <AE08>   { [            8,       asterisk,     trademark                ] };
+    key <AE09>   { [            9,      parenleft,     plusminus,      onethird ] };
+    key <AE10>   { [            0,     parenright,        oslash,      Ooblique ] };
+    key <AE11>   { [  bracketleft,      braceleft,   ordfeminine,   dead_macron ] };
+    key <AE12>   { [ bracketright,     braceright,     masculine                ] };
+
+    key <AD01>   { [      slash,   question,        degree,   questiondown ] };
+    key <AD02>   { [      comma,       less,  dead_cedilla,     dead_caron ] };
+//  key <AD03>   { [     period,    greater, dead_abovedot, periodcentered ] };
+    key <AD03>   { [     period,    greater,        U2022,  dead_abovedot ] };
+    key <AD04>   { [          p,          P,         thorn,          THORN ] };
+    key <AD05>   { [          y,          Y,       uparrow,            yen ] };
+    key <AD06>   { [          f,          F,       dstroke,    ordfeminine ] };
+    key <AD07>   { [          g,          G,           eng,            ENG ] };
+    key <AD08>   { [          c,          C,            Up                 ] };
+    key <AD09>   { [          r,          R,    registered,      copyright ] };
+    key <AD10>   { [          l,          L,       lstroke,        Lstroke ] };
+    key <AD11>   { [ dead_acute, dead_grave,         acute,          grave ] };
+    key <AD12>   { [      equal,       plus,       section,    dead_ogonek ] };
+
+    key <AC01>   { [          a,               A,         ae,          AE ] };
+    key <AC02>   { [          o,               O,         oe,          OE ] };
+    key <AC03>   { [          e,               E,   EuroSign,    EuroSign ] };
+    key <AC04>   { [          u,               U,  leftarrow              ] };
+    key <AC05>   { [          i,               I,  downarrow,    idotless ] };
+    key <AC06>   { [          d,               D, rightarrow              ] };
+    key <AC07>   { [          h,               H,       Left              ] };
+    key <AC08>   { [          t,               T,       Down              ] };
+    key <AC09>   { [          n,               N,      Right              ] };
+    key <AC10>   { [          s,               S,     ssharp,     section ] };
+    key <AC11>   { [ dead_tilde, dead_circumflex, asciitilde, asciicircum ] };
+    key <BKSL>   { [      minus,      underscore,  emdash                 ] };
+
+    key <LSGT>   { [  ccedilla, Ccedilla,           dead_acute, dead_doubleacute ] };
+    key <AB01>   { [ semicolon,    colon,        dead_belowdot,    dead_abovedot ] };
+    key <AB02>   { [         q,        Q,                slash,      Greek_OMEGA ] };
+    key <AB03>   { [         j,        J,                  bar                   ] };
+    key <AB04>   { [         k,        K,            backslash,              kra ] };
+    key <AB05>   { [         x,        X,  leftdoublequotemark                   ] };
+    key <AB06>   { [         b,        B, rightdoublequotemark                   ] };
+    key <AB07>   { [         m,        M,                   mu,               MU ] };
+    key <AB08>   { [         w,        W                                         ] };
+    key <AB09>   { [         v,        V,        guillemotleft                   ] };
+    key <AB10>   { [         z,        Z,       guillemotright                   ] };
+
+// ABNT-2 keyboard has this special key:
+    key <AB11>   { [ backslash,      bar,                slash,       dead_breve ] };
+
+// Configura o "." e a "," no teclado num�rico
+    key <KPPT>   { [ KP_Decimal               ] };
+    key <KPDL>   { [  KP_Delete, KP_Separator ] };
+};
