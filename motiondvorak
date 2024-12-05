@@ -38,9 +38,9 @@ xkb_symbols "motiondvorak" {
 
     // Linha de cima (Top Row)
     key <AD01>   { [      slash,   question,        degree,   questiondown ] };
-    key <AD02>   { [      comma,       less, guillemotleft,     dead_caron ] };
+    key <AD02>   { [      comma,       less, guillemotleft,    leftdoublequotemark  ] };
 //  key <AD03>   { [     period,    greater, periodcentered ] };
-    key <AD03>   { [     period,    greater,        guillemotright,  dead_abovedot  ] };
+    key <AD03>   { [     period,    greater,        guillemotright,  rightdoublequotemark  ] };
     key <AD04>   { [          p,          P,         thorn,          THORN ] };
     key <AD05>   { [          y,          Y,       uparrow,            yen ] };
     key <AD06>   { [          f,          F,       dstroke,    ordfeminine ] };
@@ -71,8 +71,8 @@ xkb_symbols "motiondvorak" {
     key <AB02>   { [         q,        Q,                slash,      Greek_OMEGA ] };
     key <AB03>   { [         j,        J,                  bar                   ] };
     key <AB04>   { [         k,        K,            backslash,              kra ] };
-    key <AB05>   { [         x,        X,  leftdoublequotemark                   ] };
-    key <AB06>   { [         b,        B, rightdoublequotemark                   ] };
+    key <AB05>   { [         x,        X,      dead_caron                        ] };
+    key <AB06>   { [         b,        B,       dead_abovedot                    ] };
     key <AB07>   { [         m,        M,                   mu,               MU ] };
     key <AB08>   { [         w,        W                                         ] };
     key <AB09>   { [         v,        V,      dead_cedilla                      ] };
